@@ -10,18 +10,27 @@ h1 {
 }
 
 .wrapper {
-    margin: 1vw auto;
-    padding: 0 30%;
+    padding-top: 3vw;
 
     form {
         display: flex;
         flex-direction: column;
+        margin: 1vw auto;
+        padding: 0 30%;
+
         input {
             margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            outline: 0;
+        }
+
+        input[type=submit] {
+            padding: 10px 0;
+        }
+
+        input:hover {
+            box-shadow: 1px 1px 4px 0 #000;
         }
     }
-
-    fieldset {
-        border: 0;
-  }
 }

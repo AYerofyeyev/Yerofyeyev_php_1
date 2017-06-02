@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 3vw;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw auto;
+  padding: 0 30%;
+}
+
+.wrapper form input {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  outline: 0;
+}
+
+.wrapper form input[type=submit] {
+  padding: 10px 0;
+}
+
+.wrapper form input:hover {
+  box-shadow: 1px 1px 4px 0 #000;
+}
