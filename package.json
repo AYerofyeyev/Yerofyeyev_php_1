@@ -1,0 +1,33 @@
+{
+  "name": "yerofyeyev_php_1",
+  "version": "1.0.0",
+  "description": "php-academy homework #1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AYerofyeyev/Yerofyeyev_php_1.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "php"
+  ],
+  "author": "AYerofyeyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AYerofyeyev/Yerofyeyev_php_1/issues"
+  },
+  "homepage": "https://github.com/AYerofyeyev/Yerofyeyev_php_1#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
