@@ -1,68 +1,70 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 html {
     min-height: 100vh;
-}
 
-body {
-    min-height: 100vh;
-    min-width: 320px;
-}
+    body {
+        min-height: 100vh;
+        color: #000;
+        background: #fff;
+        font-family: Arial, sans-serif;
+        min-width: 320px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
 
+            .registration-form {
+                max-width: 420px;
+                width: 45%;
 
+                h1 {
+                    margin: 0 0 20px;
+                    font-size: 36px;
+                    text-align: center;
+                }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+                form {
+                    input[type="text"],
+                    input[type="email"] {
+                        display: block;
+                        margin-bottom: 20px;
+                        padding: 0.75em 0.7em;
+                        font-size: 20px;
+                        line-height: 24px;
+                        outline: 0;
+                        box-sizing: border-box;
+                        border: 1px solid #000;
+                        width: 100%;
+                        -webkit-appearance: none;
+                        -webkit-border-radius: 0;
+                    }
 
-    .registration-form {
-        max-width: 420px;
-        width: 45%;
+                    input[type="submit"] {
+                        display: block;
+                        box-sizing: border-box;
+                        padding: 0.75em 0.7em;
+                        background: #ccd;
+                        border: 1px solid #000;
+                        font-size: 20px;
+                        line-height: 24px;
+                        width: 100%;
+                        cursor: pointer;
+                        -webkit-appearance: none;
+                        -webkit-border-radius: 0;
+                    }
 
-        h1 {
-            margin: 0 0 20px 0;
-            font-size: 36px;
-            text-align: center;
-        }
-
-        form {
-
-            input[type="text"],
-            input[type="email"] {
-                display: block;
-                margin-bottom: 20px;
-                padding: .75em .7em;
-                font-size: 20px;
-                line-height: 24px;
-                outline: 0;
-                box-sizing: border-box;
-                border: 1px solid #000;
-                width: 100%;
-                border-radius: 0;
-            }
-
-            input[type="submit"] {
-                display: block;
-                box-sizing: border-box;
-                padding: .75em .7em;
-                background: #ccd;
-                border: 1px solid #000;
-                border-radius: 0;
-                font-size: 20px;
-                line-height: 24px;
-                width: 100%;
-                cursor: pointer;
-            }
-
-            input:hover {
-                box-shadow: 1px 1px 4px 0 #000;
+                    input:hover {
+                        box-shadow: 1px 1px 4px 0 #000;
+                    }
+                }
             }
         }
     }
