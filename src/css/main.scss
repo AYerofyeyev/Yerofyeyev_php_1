@@ -4,33 +4,66 @@
     font-family: Arial, sans-serif;
 }
 
-h1 {
-    font-size: 36px;
-    text-align: center;
+html {
+    min-height: 100vh;
 }
 
+body {
+    min-height: 100vh;
+    min-width: 320px;
+}
+
+
+
+
 .wrapper {
-    padding-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: 1vw auto;
-        padding: 0 30%;
+    .registration-form {
+        max-width: 420px;
+        width: 45%;
 
-        input {
-            margin-bottom: 20px;
-            font-size: 20px;
-            line-height: 24px;
-            outline: 0;
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 36px;
+            text-align: center;
         }
 
-        input[type=submit] {
-            padding: 10px 0;
-        }
+        form {
 
-        input:hover {
-            box-shadow: 1px 1px 4px 0 #000;
+            input[type="text"],
+            input[type="email"] {
+                display: block;
+                margin-bottom: 20px;
+                padding: .75em .7em;
+                font-size: 20px;
+                line-height: 24px;
+                outline: 0;
+                box-sizing: border-box;
+                border: 1px solid #000;
+                width: 100%;
+                border-radius: 0;
+            }
+
+            input[type="submit"] {
+                display: block;
+                box-sizing: border-box;
+                padding: .75em .7em;
+                background: #ccd;
+                border: 1px solid #000;
+                border-radius: 0;
+                font-size: 20px;
+                line-height: 24px;
+                width: 100%;
+                cursor: pointer;
+            }
+
+            input:hover {
+                box-shadow: 1px 1px 4px 0 #000;
+            }
         }
     }
 }

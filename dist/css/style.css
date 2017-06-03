@@ -1,36 +1,49 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-}
+  font-family: Arial, sans-serif; }
 
-h1 {
-  font-size: 36px;
-  text-align: center;
-}
+html {
+  min-height: 100vh; }
+
+body {
+  min-height: 100vh;
+  min-width: 320px; }
 
 .wrapper {
-  padding-top: 3vw;
-}
-
-.wrapper form {
   display: flex;
-  flex-direction: column;
-  margin: 1vw auto;
-  padding: 0 30%;
-}
-
-.wrapper form input {
-  margin-bottom: 20px;
-  font-size: 20px;
-  line-height: 24px;
-  outline: 0;
-}
-
-.wrapper form input[type=submit] {
-  padding: 10px 0;
-}
-
-.wrapper form input:hover {
-  box-shadow: 1px 1px 4px 0 #000;
-}
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  .wrapper .registration-form {
+    max-width: 420px;
+    width: 45%; }
+    .wrapper .registration-form h1 {
+      margin: 0 0 20px 0;
+      font-size: 36px;
+      text-align: center; }
+    .wrapper .registration-form form input[type="text"],
+    .wrapper .registration-form form input[type="email"] {
+      display: block;
+      margin-bottom: 20px;
+      padding: .75em .7em;
+      font-size: 20px;
+      line-height: 24px;
+      outline: 0;
+      box-sizing: border-box;
+      border: 1px solid #000;
+      width: 100%;
+      border-radius: 0; }
+    .wrapper .registration-form form input[type="submit"] {
+      display: block;
+      box-sizing: border-box;
+      padding: .75em .7em;
+      background: #ccd;
+      border: 1px solid #000;
+      border-radius: 0;
+      font-size: 20px;
+      line-height: 24px;
+      width: 100%;
+      cursor: pointer; }
+    .wrapper .registration-form form input:hover {
+      box-shadow: 1px 1px 4px 0 #000; }
