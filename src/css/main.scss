@@ -12,7 +12,7 @@ html {
         min-height: 100vh;
         color: $text-color;
         background: $background-color;
-        font-family: Arial, sans-serif;
+        font-family: $paragraph-font;
         min-width: 320px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -36,10 +36,12 @@ html {
 
                 img {
                     display: block;
-                    margin-bottom: 20px;
-                    max-width: 100%;
+                    float:left;
+                    margin: 0 20px 20px 0;
+                    max-width: 70%;
                     cursor: zoom-in;
                     user-select: none;
+                    overflow: hidden;
                     -moz-user-select: none;
                 }
 
@@ -57,10 +59,13 @@ html {
                 }
 
                 a {
+                    display: block;
+                    margin-bottom: 20px;
                     color: $text-color;
                     font-style: italic;
-                    text-align: right;
+                    text-align: center;
                     text-decoration: none;
+                    max-width: 410px;
                 }
 
                 img:hover,

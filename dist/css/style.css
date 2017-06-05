@@ -27,10 +27,12 @@ html {
           text-align: center; }
         html body .wrapper .vsreact img {
           display: block;
-          margin-bottom: 20px;
-          max-width: 100%;
+          float: left;
+          margin: 0 20px 20px 0;
+          max-width: 70%;
           cursor: zoom-in;
           user-select: none;
+          overflow: hidden;
           -moz-user-select: none; }
         html body .wrapper .vsreact p {
           margin-bottom: 20px;
@@ -40,10 +42,13 @@ html {
           html body .wrapper .vsreact p span:hover {
             background: rgba(0, 255, 0, 0.5); }
         html body .wrapper .vsreact a {
+          display: block;
+          margin-bottom: 20px;
           color: #000;
           font-style: italic;
-          text-align: right;
-          text-decoration: none; }
+          text-align: center;
+          text-decoration: none;
+          max-width: 410px; }
         html body .wrapper .vsreact img:hover,
         html body .wrapper .vsreact a:hover {
           box-shadow: 1px 1px 4px 0 #000; }
