@@ -18,17 +18,20 @@ html {
       align-items: center;
       min-height: 100vh; }
       html body .wrapper .vsreact {
-        max-width: 804px;
+        padding: 50px;
         width: 60%;
-        padding: 20px; }
+        max-width: 804px; }
         html body .wrapper .vsreact h1 {
           margin: 0 0 20px;
           font-size: 40px;
           text-align: center; }
-        html body .wrapper .vsreact a {
-          margin-bottom: 20px; }
-          html body .wrapper .vsreact a img {
-            max-width: 100%; }
+        html body .wrapper .vsreact img {
+          display: block;
+          margin-bottom: 20px;
+          max-width: 100%;
+          cursor: zoom-in;
+          user-select: none;
+          -moz-user-select: none; }
         html body .wrapper .vsreact p {
           margin-bottom: 20px;
           text-align: justify; }
@@ -41,8 +44,23 @@ html {
           font-style: italic;
           text-align: right;
           text-decoration: none; }
+        html body .wrapper .vsreact img:hover,
         html body .wrapper .vsreact a:hover {
           box-shadow: 1px 1px 4px 0 #000; }
+        html body .wrapper .vsreact img:active {
+          position: fixed;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: auto;
+          height: auto;
+          max-width: 99%;
+          max-height: 99%;
+          margin: auto;
+          box-shadow: 0 0 20px #000, 0 0 0 100vw rgba(210, 210, 210, 0.4);
+          cursor: zoom-out; }
       html body .wrapper .registration-form {
         max-width: 420px;
         width: 40%; }
@@ -50,8 +68,8 @@ html {
           margin: 0 0 20px;
           font-size: 36px;
           text-align: center; }
-        html body .wrapper .registration-form form input[type="text"],
-        html body .wrapper .registration-form form input[type="email"] {
+        html body .wrapper .registration-form form input[type="email"],
+        html body .wrapper .registration-form form input[type="text"] {
           display: block;
           margin-bottom: 20px;
           padding: 0.75em 0.7em;
