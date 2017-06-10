@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Homework 1</title>
     <link rel="shortcut icon" type="image/png" href=<%= require("./img/favicon.png") %> >
-    <script src="js/script.js" charset="utf-8"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <article class="vsreact">
+            <p><a name="top"></a></p>
             <h1>So React is getting slower with increasing number of elements?</h1>
-            <img src=<%= require("./img/vanilla_vs_react.png") %> alt="See chart through bottom link">
+            <img class="illustration" src=<%= require("./img/vanilla_vs_react.png") %> alt="See chart through bottom link">
             <p>
                 The time of adding other images has to be nearly constant, because we add 100 images and then another 100 images — the same amount of work needs to be done, right? We do not manipulate with all the images — unless diffing mechanism says that last update
                 information is not valid anymore and updates previous images too. But just that one simple H3 with last update information is diffed against current DOM not the whole image div, because this element is the one that is different in the
@@ -40,6 +40,7 @@
                     <td colspan="2">&nbsp;</td>
                 </tr>
             </table>
+            <p><a id="arrowup" href="#top"><img src=<%= require("./img/arrowup.svg") %> alt="To top"></a></p>
         </article>
         <div class="registration-form">
             <h2>Регистрация</h2>

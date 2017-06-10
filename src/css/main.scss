@@ -34,7 +34,7 @@ html {
                     text-align: center;
                 }
 
-                img {
+                .illustration {
                     display: block;
                     float:left;
                     margin: 0 20px 20px 0;
@@ -73,7 +73,7 @@ html {
                     box-shadow: 1px 1px 4px 0 $text-color;
                 }
 
-                img:active {
+                .illustration:active {
                     position: fixed;
                     z-index: 2;
                     top: 0;
@@ -87,6 +87,15 @@ html {
                     margin: auto;
                     box-shadow: 0 0 20px $text-color, 0 0 0 100vw $shadow-color;
                     cursor: zoom-out;
+                }
+
+                table {
+                    margin-bottom: 20px;
+                }
+
+                #arrowup {
+                    max-width: 25px;
+                    box-shadow: none;
                 }
             }
 

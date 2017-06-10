@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: "js/script.js",
-        publicPath: "./"
+        publicPath: "/"
     },
     devServer: {
         contentBase: path.join(__dirname, "./src"),
@@ -31,7 +31,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg|svg)$/,
                 use: "file-loader?name=[path][name].[ext]"
             }
         ]
