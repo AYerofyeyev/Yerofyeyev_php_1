@@ -60,26 +60,59 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+// import React from "../libs/react";
+// import ReactDOM from "../libs/react-dom";
+
+var menu = React.createClass({
+  displayName: "menu",
+
+  render: function render() {
+    return React.createElement(
+      "ul",
+      null,
+      React.createElement(
+        "li",
+        null,
+        React.createElement(
+          "a",
+          null,
+          "Home"
+        )
+      )
+    );
+  }
+});
+
+ReactDOM.render(React.createElement("menu", null), document.getElementById("root"));
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_main_scss__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_main_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_menu_jsx__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_menu_jsx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_menu_jsx__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_main_scss__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_main_scss__);
+
+
 
 console.log("script is plugged in");
 

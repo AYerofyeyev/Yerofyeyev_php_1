@@ -24,6 +24,18 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.jsx$/,
+                include: path.resolve(__dirname, "./src/js"),
+                use: [
+                    {
+                        loader: "babel-loader",
+                        options: {
+                            presets: [["env", {modules: false}], "react"]
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.s?css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
