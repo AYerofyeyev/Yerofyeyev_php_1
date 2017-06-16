@@ -105,3 +105,5 @@ html {
           -webkit-border-radius: 0; }
         html body .wrapper .registration-form form input:hover {
           box-shadow: 1px 1px 4px 0 #000; }
+ul li {
+  display: inline-block; }

@@ -1,18 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import "./menu.scss";
 
-let menu = React.createClass({
-  render: function(){
-    return(
-      <ul>
-        <li>
-          <a>
-            Home
-          </a>
-        </li>
-      </ul>
-    )
-  }
-});
+class Menu extends React.Component {
+    constructor(props){
+        super(props)
+    }
 
-ReactDOM.render(<menu/>, document.getElementById("root"));
+    render(){
+        return(
+            <ul>
+                <li>
+                    <a>
+                        Home
+                    </a>
+                </li>
+            </ul>
+        );
+    }
+}
+
+export default Menu;
+// React.render(<Menu />, document.getElementById('root'));
