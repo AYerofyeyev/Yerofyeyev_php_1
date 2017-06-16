@@ -3,29 +3,26 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    context: path.resolve(__dirname, "./src/"),
+    context: path.resolve(__dirname, "src"),
     entry: {
         hw1: "./js/main.js"
     },
     output: {
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname, "dist"),
         filename: "js/script.js",
         publicPath: "/"
     },
     devServer: {
-        contentBase: path.join(__dirname, "./src"),
+        contentBase: path.join(__dirname, "src"),
         compress: true,
         port: 8000,
-        watchContentBase: true,
-        watchOptions: {
-            poll: true
-        }
+        watchContentBase: true
     },
     module: {
         rules: [
             {
-                test: /\.jsx$/,
-                include: path.resolve(__dirname, "./src/js"),
+                test: /\.jsx?$/,
+                include: path.resolve(__dirname, "src"),
                 use: [
                     {
                         loader: "babel-loader",
@@ -54,7 +51,9 @@ module.exports = {
             allChunks: true
         }),
         new HtmlWebpackPlugin({
-            template: "index.html"
+            filename: "index.html",
+            template: "index.html",
+            inject: true
         })
     ]
 };

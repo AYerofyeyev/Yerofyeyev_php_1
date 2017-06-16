@@ -1,5 +1,5 @@
-// import React from "../libs/react";
-// import ReactDOM from "../libs/react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 let menu = React.createClass({
   render: function(){
