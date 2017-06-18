@@ -1,0 +1,21 @@
+ul {
+    padding: 0 20px 0;
+    li {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+
+        a {
+            cursor: pointer;
+        }
+
+        ul {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            padding: 20px 20px 0;
+            background: linear-gradient(to top, #a3a3a3, #d0d0d0);
+        }
+    }
+}
